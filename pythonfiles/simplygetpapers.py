@@ -160,17 +160,17 @@ def process_user_interests():
             print("Error:", combined_response.status_code, combined_response.text)
 
         print("updated")
-        time.sleep(30)
+        time.sleep(600)
 
 
 
 
 
 # Schedule function1 to run every Monday at 9:00 AM
-schedule.every().saturday.at("15:49").do(getdata)
+schedule.every().saturday.at("1:00").do(getdata)
 
 # Schedule function2 to run every Wednesday at 2:30 PM
-schedule.every().saturday.at("15:50").do(process_user_interests)
+schedule.every().saturday.at("1:05").do(process_user_interests)
 
 while True:
     schedule.run_pending()
