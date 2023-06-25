@@ -87,8 +87,8 @@ def mail():
 
         time.sleep(300)
 
-schedule.every().saturday.at("3:30").do(data)
-schedule.every().saturday.at("3:35").do(mail)
+schedule.every().sunday.at("3:30").do(data)
+schedule.every().sunday.at("3:35").do(mail)
 
 while True:
     schedule.run_pending()
