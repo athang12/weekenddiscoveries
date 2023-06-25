@@ -17,7 +17,7 @@ import Lottie from "lottie-react"
 import ab from './media/ab.json'
 import d from './media/d.json'
 import down from './media/down.json'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 import {useRef, useEffect} from "react";
 import a from './media/1.jpeg' 
 import b from './media/2.jpg'
